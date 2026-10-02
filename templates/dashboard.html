@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HIPAA Compliance Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                ↻
+            </div>
+
+            <div>
+                <div class="brand-name">WeRrcm</div>
+                <div class="brand-subtitle">
+                    Healthcare Compliance & GRC
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="sidebar-section">
+
+            <div class="sidebar-title">
+                CLIENT PORTAL
+
+                <span class="hipaa-badge">
+                    HIPAA
+                </span>
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="#" class="active">
+                    Dashboard
+                </a>
+
+                <a href="#">
+                    Organization
+                </a>
+
+                <a href="#">
+                    HIPAA assessment
+                </a>
+
+                <a href="#">
+                    Risk assessment
+                </a>
+
+                <a href="#">
+                    Evidence
+                    <span class="notification">24</span>
+                </a>
+
+                <a href="#">
+                    Policies
+                </a>
+
+                <a href="#">
+                    Vendors &amp; BAAs
+                </a>
+
+                <a href="#">
+                    Workforce
+                </a>
+
+                <a href="#">
+                    Incidents
+                </a>
+
+                <a href="#">
+                    Findings &amp; remediation
+                    <span class="notification">7</span>
+                </a>
+
+                <a href="#">
+                    Reports
+                </a>
+
+            </nav>
+
+        </div>
+
+
+        <!-- User section -->
+
+        <div class="user-section">
+
+            <strong>Jordan Ellis</strong>
+
+            <span>Client admin · Riverside Community</span>
+            <span>Hospital</span>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- Top bar -->
+
+        <header class="topbar">
+
+            <div class="breadcrumb">
+                Client portal
+                <span>/</span>
+                <strong>Dashboard</strong>
+            </div>
+
+
+            <div class="assessment-badge">
+                HIPAA · 2026 annual assessment
+            </div>
+
+
+            <div class="view-as">
+
+                <span>View as</span>
+
+                <div class="role-switch">
+
+                    <button>INTERNAL</button>
+                    <button>Compliance manager</button>
+                    <button>Auditor</button>
+
+                    <span class="divider"></span>
+
+                    <button>CLIENT</button>
+
+                    <button class="selected">
+                        Client admin
+                    </button>
+
+                    <button>Employee</button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Page content -->
+
+        <section class="content">
+
+            <h1>HIPAA compliance</h1>
+
+            <p class="page-subtitle">
+                Riverside Community Hospital · 2026 annual assessment
+            </p>
+
+
+            <!-- ================= TOP GRID ================= -->
+
+            <div class="top-grid">
+
+
+                <!-- Overall assessment -->
+
+                <div class="card assessment-card">
+
+                    <h2>
+                        Overall assessment progress
+                    </h2>
+
+
+                    <div class="progress-row">
+
+                        <div class="progress-label">
+                            Assessment
+                        </div>
+
+                        <div class="progress-area">
+
+                            <div class="progress-track">
+
+                                <div class="progress teal"
+                                     style="width: 85%;">
+                                </div>
+
+                            </div>
+
+                            <p>
+                                71 of 84 applicable questions answered
+                            </p>
+
+                        </div>
+
+                        <strong class="percentage">
+                            85%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="progress-row">
+
+                        <div class="progress-label">
+                            Evidence
+                        </div>
+
+                        <div class="progress-area">
+
+                            <div class="progress-track">
+
+                                <div class="progress orange"
+                                     style="width: 67%;">
+                                </div>
+
+                            </div>
+
+                            <p>
+                                56 of 84 controls have approved evidence
+                            </p>
+
+                        </div>
+
+                        <strong class="percentage">
+                            67%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="progress-row">
+
+                        <div class="progress-label">
+                            Risk assessment
+                        </div>
+
+                        <div class="progress-area">
+
+                            <div class="progress-track">
+
+                                <div class="progress orange"
+                                     style="width: 82%;">
+                                </div>
+
+                            </div>
+
+                            <p>
+                                9 of 11 risks assessed
+                            </p>
+
+                        </div>
+
+                        <strong class="percentage">
+                            82%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="progress-row">
+
+                        <div class="progress-label">
+                            Training
+                        </div>
+
+                        <div class="progress-area">
+
+                            <div class="progress-track">
+
+                                <div class="progress teal"
+                                     style="width: 91%;">
+                                </div>
+
+                            </div>
+
+                            <p>
+                                110 of 121 workforce members complete
+                            </p>
+
+                        </div>
+
+                        <strong class="percentage">
+                            91%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="progress-row">
+
+                        <div class="progress-label">
+                            Vendor review
+                        </div>
+
+                        <div class="progress-area">
+
+                            <div class="progress-track">
+
+                                <div class="progress orange"
+                                     style="width: 70%;">
+                                </div>
+
+                            </div>
+
+                            <p>
+                                7 of 10 vendors reviewed
+                            </p>
+
+                        </div>
+
+                        <strong class="percentage">
+                            70%
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Right side -->
+
+                <div class="right-top">
+
+
+                    <!-- Findings -->
+
+                    <div class="card">
+
+                        <div class="card-heading">
+
+                            <h2>
+                                Open findings
+                            </h2>
+
+                            <a href="#">
+                                View all
+                            </a>
+
+                        </div>
+
+
+                        <div class="finding-grid">
+
+                            <div class="finding">
+                                <span class="dot critical"></span>
+                                <span>Critical</span>
+                                <strong>2</strong>
+                            </div>
+
+                            <div class="finding">
+                                <span class="dot high"></span>
+                                <span>High</span>
+                                <strong>3</strong>
+                            </div>
+
+                            <div class="finding">
+                                <span class="dot medium"></span>
+                                <span>Medium</span>
+                                <strong>3</strong>
+                            </div>
+
+                            <div class="finding">
+                                <span class="dot low"></span>
+                                <span>Low</span>
+                                <strong>2</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Remediation -->
+
+                    <div class="card remediation">
+
+                        <div class="remediation-heading">
+
+                            <h2>
+                                Remediation progress
+                            </h2>
+
+                            <strong>45%</strong>
+
+                        </div>
+
+
+                        <div class="progress-track">
+
+                            <div class="progress teal"
+                                 style="width: 45%;">
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            3 in remediation · 2 awaiting WeRrcm verification · 1 closed
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= BOTTOM GRID ================= -->
+
+            <div class="bottom-grid">
+
+
+                <!-- Control status -->
+
+                <div class="card controls-card">
+
+                    <div class="card-heading">
+
+                        <h2>
+                            Control implementation status
+                        </h2>
+
+                        <span>
+                            86 controls in the Hospital template
+                        </span>
+
+                    </div>
+
+
+                    <!-- Overall control bar -->
+
+                    <div class="control-bar">
+
+                        <div class="implemented"
+                             style="width: 62%;">
+                        </div>
+
+                        <div class="partial"
+                             style="width: 11%;">
+                        </div>
+
+                        <div class="not-implemented"
+                             style="width: 7%;">
+                        </div>
+
+                        <div class="review"
+                             style="width: 6%;">
+                        </div>
+
+                        <div class="unanswered"
+                             style="width: 10%;">
+                        </div>
+
+                        <div class="na"
+                             style="width: 4%;">
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-grid">
+
+                        <div class="status-card">
+
+                            <span>
+                                <i class="green"></i>
+                                Implemented
+                            </span>
+
+                            <strong>53</strong>
+
+                        </div>
+
+
+                        <div class="status-card">
+
+                            <span>
+                                <i class="yellow"></i>
+                                Partially implemented
+                            </span>
+
+                            <strong>9</strong>
+
+                        </div>
+
+
+                        <div class="status-card">
+
+                            <span>
+                                <i class="red"></i>
+                                Not implemented
+                            </span>
+
+                            <strong>5</strong>
+
+                        </div>
+
+
+                        <div class="status-card">
+
+                            <span>
+                                <i class="blue"></i>
+                                Under review
+                            </span>
+
+                            <strong>4</strong>
+
+                        </div>
+
+
+                        <div class="status-card">
+
+                            <span>
+                                <i class="gray"></i>
+                                Not answered
+                            </span>
+
+                            <strong>10</strong>
+
+                        </div>
+
+
+                        <div class="status-card">
+
+                            <span>
+                                <i class="gray-dark"></i>
+                                Not applicable
+                            </span>
+
+                            <strong>5</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Upcoming -->
+
+                <div class="card upcoming">
+
+                    <div class="card-heading">
+
+                        <h2>
+                            Upcoming
+                        </h2>
+
+                    </div>
+
+
+                    <div class="upcoming-item">
+
+                        <div>
+                            <span class="small-dot"></span>
+
+                            Risk assessment review ·
+                            2 risks not yet assessed
+                        </div>
+
+                        <span>
+                            08-Oct-2026
+                        </span>
+
+                        <b>›</b>
+
+                    </div>
+
+
+                    <div class="upcoming-item">
+
+                        <div>
+                            <span class="small-dot"></span>
+
+                            3 evidence items expiring or expired
+                        </div>
+
+                        <span>
+                            Next 30 days
+                        </span>
+
+                        <b>›</b>
+
+                    </div>
+
+
+                    <div class="upcoming-item">
+
+                        <div>
+                            <span class="small-dot"></span>
+
+                            2 vendor BAAs expiring or expired
+                        </div>
+
+                        <span>
+                            01-Nov-2026
+                        </span>
+
+                        <b>›</b>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
